@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Домащнее задание уорок №1</h1>
+    </a>
+
+    <a href="Task1.html">
+        <H3>Задание №1</H3>
+    </a>
+
+    <a href="Task2.html">
+        <H3>Задание №2</H3>
+    </a>
+
+    <a href="Task3.html">
+        <H1>Задание №3</H1>
+    </a>
+    <script>
+        let result1 = 10 + 10 + "10";
+        console.log(result1);
+        alert("число 10 прибавляем к числу 10, далее с учетом того, что один литерал строка производим конкатенацию в результате получаем строку 2010");
+        let result2 = 10 + "10" + 10;
+        console.log(result2);
+        alert("число 10 производим конкатенацию с строкой 10, далее строку '1010' конкатенируем с числом 10 получаем строку 101010");
+        let result3 = 10 + 10 + +"10";
+        console.log(result3);
+        alert("число 10 прибавляем к числу 10, далее с учетом того, что строка 10 с унарным плюсом превращается в число 10 складываем и получаем число 30");
+        let result4 = 10 / -"";
+        console.log(result4);
+        alert("пустая строка находится с унарным минусом что дает нам 0 с минусом, так как унарный минус превращает строку в число с обратным знаком, а число 10 деленное на число -0 дает -Infinity");
+        let result5 = 10 / +"2,5";
+        console.log(result5);
+        alert("унарный плюс стоит перед строкой которую он не сможет преобразовать в число и выдаст NaN, соответственно и при делении числа 10 на NaN результат будет NaN");
+    </script>
+
+</body>
+
+</html>
