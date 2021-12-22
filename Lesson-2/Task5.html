@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №5</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Домащнее задание уорок №1</h1>
+    </a>
+
+    <a href="Task1.html">
+        <H3>Задание №1</H3>
+    </a>
+
+    <a href="Task2.html">
+        <H3>Задание №2</H3>
+    </a>
+
+    <a href="Task3.html">
+        <H3>Задание №3</H3>
+    </a>
+
+    <a href="Task4.html">
+        <H3>Задание №4</H3>
+    </a>
+
+    <a href="Task5.html">
+        <H1>Задание №5</H1>
+        <p>Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 –
+            значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции
+            (использовать switch) выполнить одну из арифметических операций (использовать функции из задания 4) и
+            вернуть полученное значение.</p>
+    </a>
+    <script>
+        "use strict"
+
+        let arg1 = +prompt("Введите первое число");
+        let arg2 = +prompt("Введите второе число");
+        let operation = prompt("Введите одну из операций (сумма, разность, произведение, частное)");;
+
+        function summ(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                alert("Вы в одном числе ввели что то отличное от числа");
+                return;
+            } else
+                return summ = a + b;
+        }
+
+        function diff(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                alert("Вы в одном числе ввели что то отличное от числа");
+                return;
+            } else
+                return diff = a - b;
+        }
+
+        function multiplication(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                alert("Вы в одном числе ввели что то отличное от числа");
+                return;
+            } else
+                return multiplication = a * b;
+        }
+
+        function division(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                return alert("Вы в одном числе ввели что то отличное от числа")
+            } else
+                if (b == 0) {
+                    alert("На ноль делить нельзя")
+                    return;
+                } else
+                    return division = a / b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            if (operation == "сумма") {
+                return alert(`Сумма двух чисел равна: ${summ(arg1, arg2)}`)
+            } else if (operation == "разность") {
+                alert(`Разность двух чисел равна: ${diff(arg1, arg2)}`);
+            } else if (operation == "произведение") {
+                alert(`Произведение двух чисел равно: ${multiplication(arg1, arg2)}`);
+            } else if (operation == "частное") {
+                alert(`Частное двух чисел равно: ${division(arg1, arg2)}`);
+            } else {
+                return alert("Что то вы ввели не то")
+            }
+
+        }
+
+        mathOperation(arg1, arg2, operation);
+    </script>
+
+    <a href="Task6.html">
+        <H3>Задание №6</H3>
+    </a>
+</body>
+
+</html>
