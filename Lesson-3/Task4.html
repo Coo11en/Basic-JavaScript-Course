@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №4</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Домащнее задание уорок №3</h1>
+    </a>
+
+    <a href="Task1.html">
+        <H3>Задание №1</H3>
+    </a>
+
+    <a href="Task2.html">
+        <H3>Задание №2</H3>
+    </a>
+
+    <a href="Task3.html">
+        <H3>Задание №3</H3>
+    </a>
+
+    <a href="Task4.html">
+        <H1>Задание №4</H1>
+        <p>Перед вами находится массив с продуктами в интернет-магазине. Вам нужно: <br>
+            1. Получить все товары, у которых есть фотографии, можете использовать метод filter
+            https://mzl.la/2qROQkT <br>
+            2. Отсортируйте товары по цене (от низкой цены к высокой), можете использовать
+            метод sort https://mzl.la/2Y79hbZ , как устроен sort можно посмотреть например
+            здесь https://youtu.be/O2pusOp0gC0 или в дополнительных видео в материалах урока. <br>
+
+            const products = [ <br>
+            { <br>
+            id: 3, <br>
+            price: 127, <br>
+            photos: [ <br>
+            "1.jpg", <br>
+            "2.jpg", <br>
+            ] <br>
+            }, <br>
+            { <br>
+            id: 5, <br>
+            price: 499, <br>
+            photos: [] <br>
+            }, <br>
+            { <br>
+            id: 10, <br>
+            price: 26, <br>
+            photos: [ <br>
+            "3.jpg" <br>
+            ] <br>
+            }, <br>
+            { <br>
+            id: 8, <br>
+            price: 78, <br>
+            }, <br>
+            ]; <br>
+
+            В первом пункте у вас должен получиться такой массив из двух элементов https://yadi.sk/i/9IBcmLEP6nId9w <br>
+            Во втором пункте массив должен стать таким https://yadi.sk/i/-xKIq_prDx3Txg</p>
+    </a>
+    <script>
+        "use strict"
+        const products = [
+            {
+                id: 3,
+                price: 127,
+                photos: [
+                    "1.jpg",
+                    "2.jpg",
+                ]
+            },
+            {
+                id: 5,
+                price: 499,
+                photos: []
+            },
+            {
+                id: 10,
+                price: 26,
+                photos: [
+                    "3.jpg"
+                ]
+            },
+            {
+                id: 8,
+                price: 78,
+            },
+        ];
+
+        let products_foto = [];
+        let j = 0;
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].photos != undefined) {
+                if (products[i].photos.length > 0) {
+                    products_foto[j] = products[i];
+                    ++j;
+                }
+            }
+        }
+
+        products.sort(function (a, b) {
+            if (a.price > b.price) {
+                return 1;
+            }
+            if (a.price < b.price) {
+                return -1;
+            }
+            // a должно быть равным b
+            return 0;
+        });
+
+
+    </script>
+
+    <a href="Task5.html">
+        <H3>Задание №5</H3>
+    </a>
+
+    <a href="Task6.html">
+        <H3>Задание №6</H3>
+    </a>
+</body>
+
+</html>
