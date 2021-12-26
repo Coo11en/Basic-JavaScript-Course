@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №6</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Домащнее задание уорок №3</h1>
+    </a>
+
+    <a href="Task1.html">
+        <H3>Задание №1</H3>
+    </a>
+
+    <a href="Task2.html">
+        <H3>Задание №2</H3>
+    </a>
+
+    <a href="Task3.html">
+        <H3>Задание №3</H3>
+    </a>
+
+    <a href="Task4.html">
+        <H3>Задание №4</H3>
+    </a>
+
+    <a href="Task5.html">
+        <H3>Задание №5</H3>
+    </a>
+
+    <a href="Task6.html">
+        <H1>Задание №6</H1>
+        <p>Нарисовать горку с помощью console.log (используя цикл for), как показано на рисунке,
+            только у вашей горки должно быть 20 рядов, а не 5: <br>
+            <br>
+            x <br>
+            xx <br>
+            xxx <br>
+            xxxx <br>
+            xxxxx
+        </p>
+    </a>
+    <script>
+        "use strict"
+        let tree = "";
+        let space = "                   "
+        console.log(space + '★' + tree);
+        for (let i = 0; i < 20; i++) {
+
+            tree += "*";
+            console.log(space + tree + tree);
+            space = space.substring(0, space.length - 1);
+        }
+
+        console.log("С наступающим новым годом!!! Всего самого лучшего в новом году!!!")
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание №4</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Домащнее задание уорок №1</h1>
+    </a>
+
+    <a href="Task1.html">
+        <H3>Задание №1</H3>
+    </a>
+
+    <a href="Task2.html">
+        <H3>Задание №2</H3>
+    </a>
+
+    <a href="Task3.html">
+        <H3>Задание №3</H3>
+    </a>
+
+    <a href="Task4.html">
+        <H1>Задание №4</H1>
+        <p>Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя параметрами. Т.е.
+            например, функция для сложения должна принимать два числа, складывать их и возвращать результат.</p>
+    </a>
+    <script>
+        "use strict"
+
+        let a = +prompt("Введите первое число");
+        let b = +prompt("Введите второе число");
+        let result;
+
+        function summ(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                alert("Вы в одном числе ввели что то отличное от числа");
+                return;
+            } else
+                return summ = a + b;
+        }
+
+        function diff(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                alert("Вы в одном числе ввели что то отличное от числа");
+                return;
+            } else
+                return diff = a - b;
+        }
+
+        function multiplication(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                alert("Вы в одном числе ввели что то отличное от числа");
+                return;
+            } else
+                return multiplication = a * b;
+        }
+
+        function division(a, b) {
+            if (isNaN(a) || isNaN(b)) {
+                return alert("Вы в одном числе ввели что то отличное от числа")
+            } else
+                if (b == 0) {
+                    alert("На ноль делить нельзя")
+                    return;
+                } else
+                    return division = a / b;
+        }
+
+        alert(`Сумма двух чисел равна: ${summ(a, b)}`);
+        alert(`Разность двух чисел равна: ${diff(a, b)}`);
+        alert(`Произведение двух чисел равно: ${multiplication(a, b)}`);
+        alert(`Частное двух чисел равно: ${division(a, b)}`);
+
+
+    </script>
+
+    <a href="Task5.html">
+        <H3>Задание №5</H3>
+    </a>
+
+    <a href="Task6.html">
+        <H3>Задание №6</H3>
+    </a>
+</body>
+
+</html>
