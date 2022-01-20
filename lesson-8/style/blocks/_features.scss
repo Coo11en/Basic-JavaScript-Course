@@ -1,0 +1,60 @@
+.features {
+    background-color: #222222;
+    color: $main-color-std;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.features-link {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-card--link {
+    fill: $main-color;
+    &:hover {
+        fill: #b1ffaa;
+        }
+}
+
+.features-card {
+    height: 136px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-position: top;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.features-heading {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 16px;
+    color: #FBFBFB;
+}
+
+.features-text {
+    font-weight: 300;
+    @include text-min;
+    color: #FBFBFB;
+}
+
+.features-delivery {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features-sales {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features-ass {
+    align-items: center;
+    justify-content: space-between;
+}

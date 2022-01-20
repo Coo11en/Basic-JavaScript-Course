@@ -1,0 +1,36 @@
+.promo {
+    background-color: #F1E4E6;
+}
+
+.offer-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 35px;
+    color: #222222;
+    border-left: 12px solid $main-color;
+    padding-left: 16px;
+    margin-right: 90px;
+    margin: 30% 90px 30% 0;
+}
+
+.ofer-title--small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.offer-title--pink {
+    color: $main-color;
+}
+
+.offer-wrap {
+    max-height: 764px;
+    background-image: url(../img/promo_top.png);
+    background-repeat: no-repeat;
+    background-position-x: -64%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: auto 100%;
+}
