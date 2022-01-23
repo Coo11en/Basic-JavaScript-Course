@@ -1,0 +1,30 @@
+.slider {
+	background-color: #F7F7F7;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+	
+		&-btn {
+        padding: 10px;
+        border: none;
+        background-color: rgba($color: #2A2A2A, $alpha: 0.15);
+		color: $main-color-std;
+        fill: #F16D7F;
+        transition-property: fill;
+        transition-duration: 0.3s;
+
+                &:hover {
+				    fill: black;
+			    }
+
+                &:active {
+                    transform: scale(0.9);
+                }
+	}
+
+	.about-wrap {
+		max-width: 597px;
+	}
+}

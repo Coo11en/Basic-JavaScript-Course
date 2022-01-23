@@ -1,0 +1,89 @@
+.feedback {
+    background-color: #eee;
+    background-image: url(../img/feedback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.feedback-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 100px 0 160px;
+}
+
+.speaker {
+    text-align: center;
+}
+
+.speaker-img {
+    padding-bottom: 35px;
+}
+
+.text-speaker {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.text-speaker--italic {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.feedback-button {
+    padding-right: 100px;
+}
+
+.text-subscribe {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120.0%;
+    color: #222224;
+    text-align: center;
+}
+
+.text-subscribe--small {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.subscribe {
+	display: flex;
+    padding-top: 22px;
+}
+
+.subscribe-field {
+    padding: 14px 70px 14px 20px;
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    @include text-min;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.subscribe-field::placeholder {
+	font-family: 'Lato', sans-serif;
+}
+
+.subscribe-btn {
+    cursor: pointer;
+    padding: 20px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    font-weight: normal;
+    @include text-min;
+    color: $main-color-std;
+    transition-duration: 0.3s;
+
+    &:hover {
+        background-color: #E1E1E1;
+        opacity: 0.67;
+        color: $main-color;
+    }
+}

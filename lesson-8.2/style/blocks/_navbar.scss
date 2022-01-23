@@ -1,0 +1,61 @@
+.navbar {
+    background-color: #F8F3F4;
+}
+
+.navbar-wrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.title-page {
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+    font-weight: normal;
+}
+
+.bread-crumbs--list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.bread-crumbs--item::before {
+    content: '/';
+    margin-right: 20px;
+}
+
+.bread-crumbs--item:first-child::before {
+    display: none;
+  }
+
+.breadcrumbs-item:first-child::before {
+    display: none;
+}
+
+.bread-crumbs--link {
+    text-decoration: none;
+    color: #636363;
+    text-transform: uppercase;
+    font-weight: 300;
+    @include text-min;
+    transition: 0.2s;
+}
+
+.bread-crumbs--link-boldtext {
+    font-weight: bold;
+    color: $main-color;
+}
+
+.bread-crumbs--link[href]:hover {
+    text-decoration: underline;
+    color: $main-color;
+}
+
+.nav-bar-chekbox {
+font-size: 12px;
+}

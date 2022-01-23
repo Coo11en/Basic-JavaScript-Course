@@ -1,0 +1,415 @@
+$main-color: #F16D7F;
+$main-color-std: #ffffff;
+
+@mixin text-main {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin text-min {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.full {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Шапка */
+@import "blocks/_header.scss";
+
+/* Промо */
+@import "blocks/_promo.scss";
+
+/* Категории */
+@import "blocks/_categories.scss";
+
+/* Продукты */
+@import "blocks/_products.scss";
+
+/* Преимущества */
+@import "blocks/_features.scss";
+
+/* Обратная связь */
+@import "blocks/_feedback.scss";
+
+/* Подвал */
+@import "blocks/_footer.scss";
+
+/* Навигация */
+@import "blocks/_navbar.scss";
+
+/* Фильтр */
+@import "blocks/_filter.scss";
+
+/* Слайдер */
+@import "blocks/_slider.scss";
+
+/* О товаре */
+@import "blocks/_about.scss";
+
+.cart {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    width: 540px;
+    color: #000000;
+    font-weight: 600;
+    flex-wrap: wrap;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cart-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.box {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu {
+    width: 25%;
+    padding: 10px;
+}
+
+.prod {
+    display: flex;
+}
+
+.result {
+    padding: 10px;
+}
+
+.hr {
+    margin: 0 10px;
+    border: none;
+	border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+ 
+
+
+/* tablet */
+@media (max-width: 1180px /*1140+20+32*/) {
+    
+    /*Promo*/
+    .container {
+        max-width: 100%;
+        max-width: 735px;
+        margin: 0 auto;
+    }
+
+    .offer-title {
+        font-size: 44px;
+        line-height: 30px;
+        color: #222222;
+        margin-right: 10px;
+        margin: 20% 0 20% 0;
+    }
+    
+    .ofer-title--small {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+
+    .offer-wrap {
+        min-height: 368px;
+        background-size: auto 100%;
+        background-position-x: -28%;
+    }
+
+
+    /*Categories*/
+    .categories-item {
+        width: 32%;
+        height: 15vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    .categories-item--acc {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .categories {
+        padding-top: 20px;
+        padding-bottom: 163px;
+    }
+
+    /*Products*/
+
+    .products-list {
+        padding-bottom: 2px;
+    }
+
+    .products {
+    padding-bottom: 40px;
+    }
+
+    .product-close {
+        display: none;
+    }
+
+    /*features*/
+
+    .features-link {
+        display: inline-block;
+        margin-left: 26%;
+    }
+
+    .features {
+        padding-top: 65px;
+        padding-bottom: 15px;
+    }
+
+    .features-card--link {
+        padding-bottom: 50px;    
+    }
+
+    /*feedback*/
+    .feedback-wrap {
+        display: block;
+        text-align: center;
+        padding: 64px 0 160px;
+    }
+
+    .feedback-button {
+        padding-right: 0px;
+        padding-top: 90px;
+    }
+
+    .subscribe {
+        padding-left: 26%;
+        padding-top: 22px;
+    }
+
+    /*filter*/
+    .filter {
+    margin: 25px auto 40px;
+    }
+
+/* slider */
+    .slider-img {
+    max-height: 466px;
+    }
+
+    /* about */
+
+    .text-about {
+        padding: 0 92px;
+    }
+}
+
+/* phone */
+@media (max-width: 767px /*1140+20+32*/) {
+
+.container {
+    max-width: 360px;
+}
+
+
+.cart-link {
+    transform: scale(0);
+}
+
+.registry-link {
+    transform: scale(0);
+}
+
+.main-menu-button{
+    position: absolute;
+    padding-left: 100px;
+}
+
+
+/*promo*/
+
+.offer-wrap {
+    background-image: none;
+    justify-content: center;
+}
+
+.offer-title {
+    font-size: 38px;
+    line-height: 25px;
+    margin: 30% 90px 30% 0;
+}
+
+/*categories*/
+.categories-wrap {
+    display: block;
+}
+
+.categories-item {
+    width: 100%;
+    background-size: auto;
+    margin: 16px 0;
+    height: 23vh;
+}
+
+.categories-item--acc {
+    height: 16vh;
+}
+
+.categories {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*product*/
+
+.text-products {
+    padding-bottom: 65px;
+}
+
+.product {
+    margin-bottom: 16px;
+}
+
+.center {
+    margin-top: 25px;
+}
+
+/*features*/
+.features-link {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.features {
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.features-card--link {
+    padding-bottom: 45px;
+}
+
+/*feedback*/
+.subscribe {
+        padding-left: 0;
+    }
+
+    .feedback-wrap {
+        display: block;
+        text-align: center;
+        padding-top: 110px;
+    }
+
+    /*footer*/
+    .footer-wrap {
+        display: table;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .footer-left {
+        display: table-footer-group;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+    display: inline-table;
+    padding: 20px 0;
+    }
+
+    /*navbar*/
+    .navbar-wrap {
+        display: table;
+        text-align: center;
+        padding: 30px 0 50px;
+    }
+
+    .bread-crumbs {
+    display: inline-table;
+    padding-bottom: 0px;
+    }
+
+    .title-page {
+        padding-bottom: 40px;
+    }
+
+    /* filter */
+    .filter {
+        justify-content: space-between;
+        margin: 25px auto 7px;
+    }
+
+    .filter-nav-mainbar {
+    width: auto;
+    }
+
+    .nav-bar-chekbox {
+        font-size: 12px;
+        line-height: 14px;
+        white-space: nowrap;
+    }
+
+    .nav-bar-main--title {
+        display: none;
+    }
+
+    .filter-img {
+        width: 35px;
+        height: 25px;
+    }
+
+    .nav-bar-main {
+        margin-bottom: 0px;
+    }
+
+    /* slider */
+    .slider-img {
+        max-height: 374px;
+    }
+
+    /* about */
+    .line-long-about {
+        width: 175px;
+    }
+
+    .text-about {
+    padding: 0 15px;
+    }
+
+    .price-about {
+        padding-top: 50px;
+        padding-bottom: 36px;
+    }
+
+    .nav-bar-about-chekbox {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
