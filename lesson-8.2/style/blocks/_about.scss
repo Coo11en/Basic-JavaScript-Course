@@ -1,0 +1,149 @@
+.about-wrap {
+	background-color: $main-color-std;
+	margin-top: -50px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding: 65px 0;
+    margin-bottom: 40px;
+}
+
+.title-about {
+    font-weight: 300;
+    @include text-min;
+    color: $main-color;
+    padding-bottom: 12px;
+}
+
+.line-about {
+    width: 63px;
+    border: 3px solid #EF5B70;
+    display: inline-block;
+    background-color: #EF5B70;
+}
+
+.subtitle-about {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    padding-top: 12px;
+    padding-bottom: 48px;
+}
+
+.text-about {
+    font-weight: 300;
+    @include text-min;
+    text-align: center;
+    color: #5E5E5E;
+    padding: 0 294px;
+}
+
+.price-about {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding-top: 32px;
+    padding-bottom: 65px;
+}
+
+.line-long-about {
+    width: 642px;
+    border: 1px solid #EAEAEA;
+    display: inline-block;
+    background-color: #EAEAEA;
+}
+
+.nav-bar-about-filter {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    @include text-min;
+    color: #6F6E6E;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 48px;
+}
+
+.nav-bar-about-filter--link {
+    cursor: pointer;
+}
+
+.nav-bar-about-chekbox--img {
+    fill: #6F6E6E;
+    margin-left: 10px;
+}
+
+.nav-filter-about--chekbox {
+    gap: 20px;
+}
+
+.nav-bar-about-chekbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    cursor: pointer;
+}
+
+.nav-bar-about-chekbox-item {
+    position: absolute;
+    z-index: 100;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);    
+    background-color: #fff;
+    padding: 4px 10px;
+}
+
+.nav-bar-about-size {
+    padding-left: 9px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+}
+
+.nav-bar-about-chekbox--link {
+    padding: 4px;
+}
+
+.nav-bar-about-chekbox-item {
+    list-style: none;
+}
+
+.aboutfilter-item {
+    display: flex;
+}
+
+.about-link {
+    border: solid 1px #FF6A6A;
+    padding: 15px 57px 15px 24px;
+    display: inline-flex;
+    color: #F26376;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    transition-property: background-color, color, fill;
+    transition-duration: 0.3s;
+
+    &--icon {
+        margin-right: 20px;
+        fill: #EF5B70;
+        transition-property: fill;
+        transition-duration: 0.3s;
+    }
+
+    &:hover {
+        background-color: $main-color;
+        color: $main-color-std;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &:hover &--icon {
+        fill: $main-color-std;
+    }
+}
